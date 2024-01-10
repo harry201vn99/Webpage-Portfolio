@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Home Page</title>
 </head>
 <body>
-    <h1>About Me</h1>
-    <img src="./images/Profile/profilelogo.jpg" alt="profilelogo" width="180px" height="190px">
-    <p>Hi, my name is Xuan Dong Nguyen (Harry). I am a dedicated and skilled professional with a strong educational background in web development, holding degrees from both Swinburne University of Technology (graduated in 2021) and the Victorian Institute of Technology (graduated in 2023). </p>
-    <hr>
-    <h1>Location</h1>
-    <ul>
-        <li>Hawthorn, 3122</li>
-        <li>Have car license, flexible in job location</li>
-    </ul>
-    <hr>
-    <h1>Educations</h1>
-    <ul>
-        <li>Swinburne University of Technology - Bachelor of Information and Communication Technology (2019 - 2021)</li>
-        <li>Victorian Institute of Technology (VIT) - Advanced Diploma Of Information Technology (2021 - 2023)</li>
-    </ul>
-    <hr>
-    <h1>Skills</h1>
-    <ol>
-        <li>Wix</li>
-        <li>Microsoft Office 365</li>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Flexbox</li>
-        <li>Grid</li>
-        <li>Bootstrap</li>
-        <li>Github</li>
-    </ol>
-    <hr>
-    <h1>Certifications</h1>
-    <ul>
-        <li>Bachelor of Information and Communication Technology</li>
-        <li>Advanced Diploma Of Information Technology</li>
-    </ul>
-    <hr>
-    <h1>Others</h1>
-    <ul>
-        <li>
-            <a href="/">Contact Me</a>
-        </li>
-        <li>
-            <a href="/">Linkedin</a>
-        </li>
-        <li> 
-            <a href="/">Github</a> 
-        </li>
-    </ul>
-    <hr>
-    <footer>
-        <p>© Xuan Dong Nguyen. All rights reserved</p>
-    </footer>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand me-auto" href="#">My Resume</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="about.html">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="project.html">My Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="contact.html">Contact Me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="contact.html" class="login-button">Contact Me</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+      <!--NavBar-->
+
+      <!--Hero Section-->
+      
+
+      <!--Bootstrap JS-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

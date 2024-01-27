@@ -1,66 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
 body{
-  font-family: 'Montserrat', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    color: white;
+    background: #002233;
+    overflow-x: hidden;
 }
 
-.navbar-brand{
-  font-weight: 900;
-  color: #1E90FF;
-  font-size: 24px;
-  transition: 0.3s color;
-}
-
-.login-button{
-  background-color: #1E90FF;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color;
-}
-
-.login-button:hover{
-  background-color: #00BFFF;
-}
-
-.navbar-toggler{
-  border: none;
-  font-size: 1.25rem;
-}
-
-.navbar-toggler:focus, .btn-close:focus{
-  box-shadow: none;
-  outline: none;
-}
-
+/*NavBar*/
+.navbar{
+    background-color: #fff;
+    height: 70px;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+  }
+  
 .nav-link{
-  color: #666777;
-  font-weight: 500;
-  position:relative;
+    position: relative;
+    color: #002233;
+    font-weight: 600;
 }
-
+  
 .nav-link:hover, .nav-link.active{
-  color: #000;
+    color: #0066FF;
+    font-weight: 600;
 }
-
-@media(min-width: 991px){
-  .nav-link::before{
+  
+.nav-link::before{
     content:"";
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 0;
     height: 2px;
-    background-color: #00BFFF;
+    background-color: #0066FF;
     visibility: hidden;
     transition: 0.3s ease-in-out;
-  }
-  
-  .nav-link:hover::before, .nav-link.active::before{
+}
+    
+.nav-link:hover::before, .nav-link.active::before{
     width: 100%;
     visibility: visible;
-  }
+}
+/*End of NavBar*/
+  
+  
+/*Navbar toggler*/
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+  
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+  
+.offcanvas{
+    border-radius: 20px 0px 0px 20px;
+    margin: 20px 0px 20px 0px;
+}
+/*End of Navbar toggler*/
+  
+  
+/*Navbar Brand Name*/
+.navbar-brand{
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+  
+.navbar-brand:hover{
+    transform: scale(1.1);
+}
+  
+#namebrand{
+    color: #0066FF;
+}
+/*End of Navbar Brand Name*/
+  
+/*Download Menu Button*/
+.download-button{
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+  
+.download-button:hover{
+    background-color: #0066FF;
+}
+/*End of Download Menu Button*/
+
+/*Wavey Background*/
+.spacer{
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wave{
+    background-image: url('../svg/wave.svg');
+}
+
+.layered{
+    background-image: url('../svg/layered.svg');
+}
+/*End of Wavey Background*/
+
+/*Profile Text*/
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    height: 93vh;
+}
+
+.profile-items{
+    align-self: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 1265px) {
+    .profile-items{
+        margin-top: 0;
+    }
+}
+
+.profile-text1{
+    font-size: 1.5rem;
+}
+
+.profile-text2{
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.profile-text3{
+    font-size: 2.5rem;
+}
+
+.profile-text3 span{
+    font-weight: 600;
+    color: #0066FF;
+}
+/*Profile Text*/
+
+/*Profile Picture and Social Icons*/
+.profile-img{
+    display: flex;
+    margin-top: 93px;
+    border-radius: 50%;
+    border: 10px solid #0066FF;
+}
+
+.profile-img img{
+    position: flex;
+    background-color: #fff;
+    border: 20px solid #fff;
+    width: 650px;
+    height: 700px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 700px) {
+    .profile-img img{
+        width: 93vw;
+        height: 100vw;
+    }
+}
+
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    font-size: 1.7rem;
+    border: 0.2rem solid #0066FF;
+    border-radius: 50%;
+    color: #0066FF;
+    text-decoration: none;
+    margin: 15px 5px 0px; 
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover{
+    color: white;
+    transform: scale(1)translateY(-5px);
+    background-color: #0066FF;
+}
+/*Profile Picture and Social Icons*/
+
+
+/*Profile Button */
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-1{
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border-radius: 4rem;
+    color: white;
+    border: 2px solid #0066FF;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    color: white;
+    transform: scale(1.1);
+    background-color: #0066FF;
+}
+
+.btn-2{
+    padding: 0.5rem 1.5rem;
+    background: #0066FF;
+    border-radius: 4rem;
+    color: white;
+    border: 2px solid #fff;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-2:hover{
+    color: #002233;
+    transform: scale(1.1);
+    background-color: #fff;
+}
+/*Profile Button */
+
+/*About Section*/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

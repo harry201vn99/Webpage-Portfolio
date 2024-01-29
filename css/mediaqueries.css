@@ -1,0 +1,55 @@
+@media screen and (max-width: 1530px){
+    .profile-img img{
+        width: 42vw;
+        height: 45vw;
+    }
+
+    .about-details-container{
+        width: 28vw;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .about-details-container{
+        width: 27vw;
+    }
+
+    .profile-text1{
+        font-size: 1.3rem;
+    }
+    
+    .profile-text2{
+        font-size: 3.3rem;
+    }
+    
+    .profile-text3{
+        font-size: 2.3rem;
+    }
+
+    .btn-container{
+        font-size: 0.9rem;
+    }
+    
+    .social-icons a{
+        font-size: 1.4rem;
+        width: 2.7rem;
+        height: 2.7rem;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .section-container{
+        margin-top: 100px;
+    }
+
+    .about-details-container{
+        flex-direction: column;
+    
+    }
+}
+
+
+
+@media screen and (max-width: 600px){
+
+}

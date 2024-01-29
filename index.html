@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
     <title>Welcome To My Page</title>
 </head>
 <body>
@@ -27,7 +28,7 @@
                             <a class="nav-link mx-lg-2" href="#skill">Skill</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link mx-lg-2" href="#projects">Projects</a>
+                            <a class="nav-link mx-lg-2" href="#project">Project</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link mx-lg-2" href="#contact">Contact</a>
@@ -64,41 +65,66 @@
         </section>
     </div>
 
-    <section class="about">
-        <h1>About Me</h1>
-        <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications. Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
-        <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
-        <div class="about-box">
-            <div class="about-personal">
-                <h2>I'm Xuan Dong Nguyen</h2>
-                <h3>But you can call me Harry.</h3>
-                <p>Pronouns: He/Him</p>
-                <p>Location: Melbourne, Victoria</p>
+    <section class="section-container">
+        <h1 class="text-h1">About Me</h1>
+        <div class="text-container">
+            <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications. Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
+            <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
+        </div>
+        <div class="about-container">
+            <div class="about-details-container">
+                <div class="about-details-header">
+                    <i class='bx bxs-cool' style='color:#002233'></i>
+                    <p>Bio</p>
+                </div>
+                <div class="about-details-text">
+                    <p>Name: Xuan Dong (Harry) Nguyen.</p>
+                    <p>Pronouns: He/Him.</p>
+                    <p>Location: Melbourne, Victoria.</p>
+                    <p>Language: English, Vietnamese.</p>
+                </div>
             </div>
-            <div class="about-education">
-                <h2>Educations</h2>
-                <p>Swinburne University of Technology</p>
-                <p>Victorian Institute of Technology (VIT)</p>
-                <div class="btn-container2">
-                    <button class="btn-swin" onclick="window.open('assets/resume.pdf')">Swinburne Certificate</button>
-                    <button class="btn-vit" onclick="window.open('assets/resume.pdf')">VIT Certificate</button>
+            <div class="about-details-container">
+                <div class="about-details-header">
+                    <i class='bx bxs-certification' style='color:#002233'></i>
+                    <p>Educations</p>
+                </div>
+                <div class="about-details-text">
+                    <p>Swinburne University of Technology</p>
+                    <p style="text-align: center;"><i><small>B.ICT Bachelor Degree</small></i></p>
+                    <p>Victorian Institute of Technology</p>
+                    <p style="text-align: center;"><i><small>AD.IT Advanced Diploma Degree</small></i></p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn-3" onclick="window.open('assets/certificates.pdf')">Download Certificates</button>
+                </div>
+            </div>
+            <div class="about-details-container">
+                <div class="about-details-header">
+                    <i class='bx bxs-check-circle' style='color:#002233'></i>
+                    <p>Coming Soon...</p>
+                </div>
+                <div class="about-details-text">
+                    <p style="text-align: center;"><i><small>Coming Soon...</small></i></p>
+                    <p style="text-align: center;"><i><small>Coming Soon...</small></i></p>
                 </div>
             </div>
         </div>
     </section>
     
     <section>
-        <h1>Skills</h1>
-        <p></p>
-    </section>
-    <section>
-        <h1>My Projects</h1>
+        <h1 class="text-h1">Skills</h1>
         <p></p>
     </section>
     
+    <section>
+        <h1 class="text-h1">Projects</h1>
+        <p></p>
+    </section>
+
     <div class="spacer layered">
         <section>
-            <h1>Contact</h1>
+            <h1 class="text-h1">Contact</h1>
             <p></p>
         </section>
         <footer>

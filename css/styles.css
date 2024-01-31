@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-body{
-    font-family: 'Comfortaa', sans-serif;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body{
+    height: 100vh;
     color: white;
     background: #002233;
     overflow-x: hidden;
@@ -12,30 +18,88 @@ body{
     font-weight: 600;
 }
 
-/*NavBar*/
-.navbar{
-    background-color: #fff;
+a{
+    text-decoration: none;
+}
+
+/*Arrow Btn*/
+#arrowbtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  border: #0066FF 0.2rem solid;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 01s ease;
+}
+
+#arrowbtn:hover{
+    transform: scale(1.05)translateY(-15px);
+    box-shadow: 0px 7px 0 #0066FF;
+}
+/*Arrow Btn*/
+
+/* Nav-Bar */
+.nav-bar{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 10px;
+    left: 0;
+    right: 0;
+    width: 95%;
     height: 70px;
-    margin: 10px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
-  }
-  
-.nav-link{
-    position: relative;
+    padding: 0 20px 0 20px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 50%);
+}
+/* Nav-Bar */
+
+/*Nav Brand Name*/
+.nav-logo a{
+    color: #002233;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-logo span{
+    color: #0066FF;
+}
+
+.nav-logo:hover{
+    transform: scale(1.05);
+}
+/*Nav Brand Name*/
+
+/*Nav Bar Links*/
+.nav-links a, .nav-dropdown-menu a{
     color: #002233;
     font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    position: relative;
 }
-  
-.nav-link:hover, .nav-link.active{
+
+.nav-links a:hover, .nav-dropdown-menu a:hover{
     color: #0066FF;
     font-weight: 600;
 }
-  
-.nav-link::before{
+
+.nav-links a::before, .nav-dropdown-menu a::before{
     content:"";
     position: absolute;
-    bottom: 0;
+    bottom: -3px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -44,61 +108,88 @@ body{
     visibility: hidden;
     transition: 0.3s ease-in-out;
 }
-    
-.nav-link:hover::before, .nav-link.active::before{
+
+.nav-links a:hover::before, .nav-dropdown-menu a:hover::before{
     width: 100%;
     visibility: visible;
 }
-/*End of NavBar*/
-  
-  
-/*Navbar toggler*/
-.navbar-toggler{
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+/*Nav Bar Links*/
+
+/* Nav Bar Download Btn */
+.nav-btn{
+    background-color: #0066FF;
+    color: #fff;
+    padding: 0.5rem 1rem;
     border: none;
-    font-size: 1.25rem;
-}
-  
-.navbar-toggler:focus, .btn-close:focus{
-    box-shadow: none;
     outline: none;
-}
-  
-.offcanvas{
-    border-radius: 20px 0px 0px 20px;
-    margin: 20px 0px 20px 0px;
-}
-/*End of Navbar toggler*/
-  
-  
-/*Navbar Brand Name*/
-.navbar-brand{
+    border-radius: 20px;
     font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
     transition: 0.3s ease;
 }
-  
-.navbar-brand:hover{
-    transform: scale(1.1);
+
+.nav-btn:hover{
+    transform: scale(1.05);
+    background-color: #002233;
 }
-  
-#namebrand{
+/* Nav Bar Download Btn */
+
+/*Nav Bar Drop Down Toggle*/
+.nav-toggle{
+    color: #002233;
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+}
+
+.nav-toggle:hover{
     color: #0066FF;
+    transform: scale(1.2);
 }
-/*End of Navbar Brand Name*/
-  
-/*Download Menu Button*/
-.download-button{
-    background-color: #1E90FF;
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: 0.3s background-color;
+/*Nav Bar Drop Down Toggle*/
+
+/*Nav Bar Drop Down Menu*/
+.nav-dropdown-menu{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    right: 1.4rem;
+    top: 95px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 50%);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-  
-.download-button:hover{
-    background-color: #0066FF;
+
+.nav-dropdown-menu.open{
+    height: 265px;
 }
-/*End of Download Menu Button*/
+
+.nav-dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-dropdown-menu .nav-btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+/*Nav Bar Drop Down Menu*/
 
 /*Wavey Background*/
 .spacer{
@@ -180,7 +271,6 @@ body{
     border: 0.2rem solid #0066FF;
     border-radius: 50%;
     color: #0066FF;
-    text-decoration: none;
     margin: 15px 5px 0px; 
     transition: 0.3s ease;
 }
@@ -200,32 +290,29 @@ body{
     gap: 1rem;
 }
 
-.btn-1{
-    padding: 0.5rem 1rem;
-    background: transparent;
+.btn-1, .btn-2, .btn-3{
+    padding: 0.5rem 1.5rem;
     border-radius: 4rem;
     color: white;
-    border: 2px solid #0066FF;
-    font-weight: 600;
-    transition: 0.3s ease;
     cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-1{
+    background: transparent;
+    border: 2px solid #0066FF;
+}
+
+.btn-2{
+    background: #0066FF;
+    border: 2px solid #fff;
 }
 
 .btn-1:hover{
     color: white;
     transform: scale(1.1);
     background-color: #0066FF;
-}
-
-.btn-2{
-    padding: 0.5rem 1.5rem;
-    background: #0066FF;
-    border-radius: 4rem;
-    color: white;
-    border: 2px solid #fff;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
 }
 
 .btn-2:hover{
@@ -235,12 +322,13 @@ body{
 }
 /*Profile Button */
 
-/*About Section*/
 .section-container{
     position: relative;
     text-align: center;
+    margin-top: 100px;
 }
 
+/*About Section*/
 .text-container{
     margin-top: 2rem;
 }
@@ -277,14 +365,8 @@ body{
 }
 
 .btn-3{
-    padding: 0.5rem 1.5rem;
     background: #0066FF;
-    border-radius: 4rem;
-    color: white;
     border: 2px solid #0066FF;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
 }
 
 .btn-3:hover{
@@ -292,4 +374,12 @@ body{
     transform: scale(1.1);
     background-color: #002233;
     border: 2px solid #002233;
+}
+/*About Section*/
+
+/*Skill Section*/
+.skill-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }

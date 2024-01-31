@@ -38,6 +38,14 @@
 }
 
 @media screen and (max-width: 990px){
+    .nav-links, .nav-btn{
+        display: none;
+    }
+
+    .nav-toggle, .nav-dropdown-menu{
+        display: block;
+    }
+    
     .section-container{
         margin-top: 100px;
     }
@@ -59,8 +67,10 @@
     }
 }
 
-
-
 @media screen and (max-width: 600px){
-
+    .nav-dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
 }
+

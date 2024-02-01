@@ -216,12 +216,12 @@ a{
     align-items: center;
     flex-wrap: wrap;
     gap: 5rem;
-    height: 93vh;
 }
 
 .profile-items{
     align-self: center;
     text-align: center;
+    margin-top: 150px;
 }
 
 .profile-text1{
@@ -246,7 +246,7 @@ a{
 /*Profile Picture and Social Icons*/
 .profile-img{
     display: flex;
-    margin-top: 93px;
+    margin-top: 120px;
     border-radius: 50%;
     border: 10px solid #0066FF;
 }
@@ -325,12 +325,16 @@ a{
 .section-container{
     position: relative;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 /*About Section*/
 .text-container{
     margin-top: 2rem;
+    text-align: justify;
+    text-align-last: center;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 .about-container{

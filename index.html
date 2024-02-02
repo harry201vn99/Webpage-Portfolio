@@ -7,18 +7,16 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/mediaqueries.css">
-    <title>Welcome To My Page</title>
+    <title>Welcome To My Portfolio</title>
 </head>
 <body>
     <!--Navbar-->
     <nav class="nav-bar">
-        <div class="nav-logo"><a href="#">Harry <span>Nguyen</span></a></div>
+        <div class="nav-logo hover-effect"><a href="#">Harry <span>Nguyen</span></a></div>
         <div class="nav-links">
             <a href="#about">About</a>
             <a href="#skill">Skill</a>
-            <!--
             <a href="#project">Project</a>
-            -->
             <a href="#contact">Contact</a>
         </div>
         <button class="nav-btn" onclick="toseeksite()">Seek Profile</button>
@@ -33,9 +31,7 @@
     <div class="nav-dropdown-menu">
         <li><a href="#about">About</a></li>
         <li><a href="#skill">Skill</a></li>
-        <!--
         <li><a href="#project">Project</a></li>
-        -->
         <li><a href="#contact">Contact</a></li>
         <li><button class="nav-btn" onclick="toseeksite()">Seek Profile</button></li>
         <!--
@@ -70,15 +66,17 @@
 
     <section class="section-container">
         <h1 class="text-h1">About Me</h1>
+        <!--
         <div class="text-container">
             <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications. Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
             <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
         </div>
+        -->
         <div class="about-container">
-            <div class="about-details-container">
+            <div class="about-details-container hover-effect">
                 <div class="about-details-header">
                     <i class='bx bxs-cool' style='color:#002233'></i>
-                    <p>Bio</p>
+                    <p>Biography</p>
                 </div>
                 <div class="about-details-text">
                     <p>Name: Xuan Dong (Harry) Nguyen.</p>
@@ -89,64 +87,121 @@
                     <p>Driver License - Flexible, On-site / Remote.</p>
                 </div>
             </div>
-            <div class="about-details-container">
+            <div class="about-details-container hover-effect">
+                <div class="about-details-header">
+                    <i class='bx bxs-badge-check' style='color:#002233'></i>
+                    <p>Introduction</p>
+                </div>
+                <div class="centered-text">
+                    <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications.</p>
+                    <p>Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
+                    <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
+                </div>
+            </div>
+            <div class="about-details-container hover-effect">
                 <div class="about-details-header">
                     <i class='bx bxs-certification' style='color:#002233'></i>
                     <p>Educations</p>
                 </div>
                 <div class="about-details-text">
                     <p>Swinburne University of Technology</p>
-                    <p style="text-align: center;"><i><small>2019 - 2021</small></i></p>
-                    <p style="text-align: center;"><i><small>B.ICT Bachelor Degree</small></i></p>
+                    <p class="centered-text"><i><small>2019 - 2021</small></i></p>
+                    <p class="centered-text"><i><small>B.ICT Bachelor Degree</small></i></p>
                     <p>Victorian Institute of Technology</p>
-                    <p style="text-align: center;"><i><small>2021 - 2023</small></i></p>
-                    <p style="text-align: center;"><i><small>AD.IT Advanced Diploma Degree</small></i></p>
+                    <p class="centered-text"><i><small>2021 - 2023</small></i></p>
+                    <p class="centered-text"><i><small>AD.IT Advanced Diploma Degree</small></i></p>
                 </div>
                 <button class="btn-3" onclick="window.open('assets/certificates.pdf')">Download Certificates</button>
             </div>
-            <!--
-            <div class="about-details-container">
-                <div class="about-details-header">
-                    <i class='bx bxs-check-circle' style='color:#002233'></i>
-                    <p>Coming Soon...</p>
-                </div>
-                <div class="about-details-text">
-                    <p style="text-align: center;"><i><small>Coming Soon...</small></i></p>
-                    <p style="text-align: center;"><i><small>Coming Soon...</small></i></p>
-                </div>
-            </div>
-            -->
         </div>
     </section>
     
     <section class="section-container">
         <h1 class="text-h1">Skills</h1>
         <div class="skill-container">
-            <div class="skill-img-container">
+            <div class="skill-img">
                 <iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" frameBorder="0" class="gifimg"></iframe>
                 <p><a href="https://giphy.com/gifs/JIX9t2j0ZTN9S">via GIPHY</a></p>
             </div>
-            <div class="skill-details-container">
-                <p><i class='bx bxs-check-circle' ></i> HTML</p>
-                <p><i class='bx bxs-check-circle' ></i> SVG</p>
-                <p><i class='bx bxs-check-circle' ></i> CSS</p>
-                <p><i class='bx bxs-check-circle' ></i> Javascript</p>
-                <p><i class='bx bxs-check-circle' ></i> Git</p>
-                <p><i class='bx bxs-check-circle' ></i> PostgreSQL</p>
-                <p><i class='bx bxs-check-circle' ></i> React.js</p>
-                <p><i class='bx bxs-check-circle' ></i> Node.js</p>
-                <p><i class='bx bxs-check-circle' ></i> Express.js</p>
+            <div class="skill-detail-container hover-effect">
+                <h2>Front-End Development</h2>
+                <div class="skill-details">
+                    <div>
+                        <h5><i class='bx bxl-html5'></i> HTML</h5>
+                        <p>Experienced</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-css3'></i> CSS</h5>
+                        <p>Experienced</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-javascript'></i> Javascript</h5>
+                        <p>Basic</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-git'></i> Git</h5>
+                        <p>Basic</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-postgresql'></i> PostgreSQL</h5>
+                        <p>Basic</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-react'></i> React.js</h5>
+                        <p>Basic</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxl-nodejs'></i> Node.js</h5>
+                        <p>Basic</p>
+                    </div>
+                    <div>
+                        <h5><i class='bx bxs-check-circle'></i> Express.js</h5>
+                        <p>Basic</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--
     <section class="section-container">
         <h1 class="text-h1">Projects</h1>
-        <p></p>
+        <div class="project-container">
+            <div class="project-detail hover-effect">
+                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                <div class="project-detail-text">
+                    <h3>Coming Soon...</h3>
+                    <p>Project Description</p>
+                    <div class="btn-container">
+                        <button class="btn-4" onclick="toseeksite()">Github</button>
+                        <button class="btn-5" onclick="toseeksite()">Showcase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-detail hover-effect">
+                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                <div class="project-detail-text">
+                    <h3>Coming Soon...</h3>
+                    <p>Project Description</p>
+                    <div class="btn-container">
+                        <button class="btn-4" onclick="toseeksite()">Github</button>
+                        <button class="btn-5" onclick="toseeksite()">Showcase</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-detail hover-effect">
+                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                <div class="project-detail-text">
+                    <h3>Coming Soon...</h3>
+                    <p>Project Description</p>
+                    <div class="btn-container">
+                        <button class="btn-4" onclick="toseeksite()">Github</button>
+                        <button class="btn-5" onclick="toseeksite()">Showcase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    -->
-
+ 
     <div class="spacer layered">
         <section class="section-container">
             <h1 class="text-h1">Contact</h1>

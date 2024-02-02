@@ -16,6 +16,7 @@ body{
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 .text-h1{
@@ -32,6 +33,12 @@ a{
 
 .hover-effect:hover{
     transform: scale(1.05);
+}
+
+.section-container{
+    position: relative;
+    text-align: center;
+    margin-top: 10rem;
 }
 
 /*Arrow Btn*/
@@ -329,12 +336,6 @@ a{
 }
 /*Profile Button */
 
-.section-container{
-    position: relative;
-    text-align: center;
-    margin-top: 125px;
-}
-
 /*About Section*/
 .text-container{
     margin-top: 2rem;
@@ -403,6 +404,7 @@ a{
     border-radius: 12%;
     border: 10px solid #0066FF;
     max-height: 415px;
+    color: #0066FF;
 }
 
 .skill-detail-container h2{
@@ -498,3 +500,52 @@ a{
 /*Project Section*/
 
 /*Contact Section*/
+.contact-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.contact-mail, .contact-linkedin{
+    color:#002233;
+    background-color: #fff;
+    box-shadow: 10px 10px 0 #0066FF;
+    border: #0066FF 0.3rem solid;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    padding-top: 22px;
+    height: 100px;
+    transition: 0.3s ease;
+}
+
+.contact-mail{
+    width: 600px;
+}
+
+.contact-linkedin{
+    width: 200px;
+}
+
+.contact-mail:hover, .contact-linkedin:hover{
+    transform: scale(1.05);
+    color: #fff;
+    background-color: #002233;
+}
+
+.contact-mail i, .contact-linkedin i{
+    position: relative;
+    font-size: 2rem;
+    top: 6px;
+    right: 3px;
+}
+/*Contact Section*/
+
+footer{
+    background-color: #0066FF;
+}
+  
+footer p{
+    text-align: center;
+}

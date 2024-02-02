@@ -1,4 +1,3 @@
-/*
 @media screen and (max-width: 1530px){
     .profile-img img{
         width: 42vw;
@@ -9,14 +8,11 @@
         width: 28vw;
     }
 }
-*/
 
 @media screen and (max-width: 1265px){
-    /*
     .about-details-container{
         width: 27vw;
     }
-    */
 
     .profile{
         display: flex;

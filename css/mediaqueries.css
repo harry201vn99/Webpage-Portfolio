@@ -149,6 +149,21 @@
         width: unset;
     }
 
+    .project-detail-container{
+        width: 75vw;
+        height: 95vw;
+    }
+
+    .project-detail-container img{
+        width: 65vw;
+        height: 50vw;
+    }
+
+    .btn-4, .btn-5{
+        flex: 0 0 150px;
+        height: 50px;
+    }
+
     .contact-mail{
         width: 90vw;
     }

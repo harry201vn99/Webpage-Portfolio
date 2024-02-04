@@ -176,7 +176,8 @@ a{
     display: none;
     position: fixed;
     z-index: 1000;
-    right: 1.4rem;
+    left: 0;
+    right: 0;
     top: 95px;
     width: 300px;
     background: #fff;
@@ -353,7 +354,6 @@ a{
 
 .about-details-container{
     padding: 1.5rem;
-    flex: 1;
     color:#002233;
     background: white;
     border-radius: 2rem;
@@ -386,9 +386,8 @@ a{
 
 /*Skill Section*/
 .skill-container{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
-    flex-direction: row;
     margin-top: 2rem;
     gap: 8rem;
 }
@@ -440,14 +439,13 @@ a{
 
 /*Project Section*/
 .project-container{
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     justify-content: center;
     margin-top: 2rem;
     gap: 5rem;
 }
 
-.project-detail{
+.project-detail-container{
     color:#002233;
     background-color: #fff;
     box-shadow: 10px 10px 0 #0066FF;
@@ -457,7 +455,7 @@ a{
     height: 550px;
 }
 
-.project-detail img{
+.project-detail-container img{
     width: 370px;
     height: 300px;
     border-radius: 10%;
@@ -514,7 +512,7 @@ a{
     box-shadow: 10px 10px 0 #0066FF;
     border: #0066FF 0.3rem solid;
     border-radius: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     padding-top: 22px;
     height: 100px;
     transition: 0.3s ease;

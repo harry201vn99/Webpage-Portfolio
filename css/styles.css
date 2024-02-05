@@ -1,67 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
+/*General*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Comfortaa', sans-serif;
 }
 
 body{
-    height: 100vh;
+    font-family: 'Comfortaa', sans-serif;
     color: white;
     background: #002233;
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+/*General*/
+
+/*Global*/
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
 a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.text-h1{
+.btn-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn{
     font-weight: 600;
-}
-
-.centered-text{
-    text-align: center; 
+    padding: 0.8rem;
+    width: 10rem;
+    border-radius: 4rem;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 .hover-effect{
-    transition: 0.3s ease;
+    transition: all 0.3s ease; 
 }
 
 .hover-effect:hover{
     transform: scale(1.05);
 }
 
-.section-container{
+section {
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+#about, #skill, #project, #contact{
+    padding-top: 15rem;
     position: relative;
-    text-align: center;
-    margin-top: 10rem;
+}
+/*Global*/
+
+/*Wavey Background*/
+.spacer, .spacer2{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-/*Arrow Btn*/
-#arrowbtn{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #fff;
-  border: #0066FF 0.2rem solid;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 2rem;
-  cursor: pointer;
-  z-index: 1000;
-  transition: 01s ease;
+.spacer{
+    aspect-ratio: 960/300;
 }
 
-#arrowbtn:hover{
-    transform: scale(1.05)translateY(-15px);
-    box-shadow: 0px 7px 0 #0066FF;
+.spacer2{
+    aspect-ratio: 960/200;
 }
-/*Arrow Btn*/
+
+.wave{
+    background-image: url('../svg/wave.svg');
+}
+
+.layer{
+    background-image: url('../svg/layer.svg');
+}
+/*Wavey Background*/
 
 /* Nav-Bar */
 .nav-bar{
@@ -206,79 +236,60 @@ a{
 }
 /*Nav Bar Drop Down Menu*/
 
-/*Wavey Background*/
-.spacer{
-    aspect-ratio: 960/300;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.wave{
-    background-image: url('../svg/wave.svg');
-}
-
-.layered{
-    background-image: url('../svg/layered.svg');
-}
-/*End of Wavey Background*/
-
-/*Profile Text*/
-.profile{
+/*Profile Section*/
+#profile{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 5rem;
+    padding-top: 130px;
 }
 
 .profile-items{
     align-self: center;
     text-align: center;
-    margin-top: 150px;
+}
+  
+.profile-text-p1{
+    font-size: 1.2rem;
+}
+  
+.profile-text-p2{
+    font-size: 1.75rem;
 }
 
-.profile-text1{
-    font-size: 1.5rem;
-}
-
-.profile-text2{
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-.profile-text3{
-    font-size: 2.5rem;
-}
-
-.profile-text3 span{
-    font-weight: 600;
+.profile-text-p2 span{
     color: #0066FF;
+    font-weight: 600;
 }
-/*Profile Text*/
+
+.profile-name{
+    font-weight: 600;
+}
+/*Profile Section*/
 
 /*Profile Picture and Social Icons*/
-.profile-img{
+.profile-img-container{
     display: flex;
-    margin-top: 120px;
+    margin: auto 0;
+    justify-content: center;
     border-radius: 50%;
     border: 10px solid #0066FF;
 }
 
-.profile-img img{
-    position: flex;
+.profile-img-container img{
     background-color: #fff;
     border: 20px solid #fff;
-    width: 650px;
-    height: 700px;
+    width: 550px;
+    height: 600px;
     border-radius: 50%;
 }
 
-.social-icons a{
+.profile-icons-container a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    margin: 15px 5px 0px; 
     width: 3rem;
     height: 3rem;
     background: transparent;
@@ -286,42 +297,19 @@ a{
     border: 0.2rem solid #0066FF;
     border-radius: 50%;
     color: #0066FF;
-    margin: 15px 5px 0px; 
-    transition: 0.3s ease;
 }
 
-.social-icons a:hover{
+.profile-icons-container a:hover{
     color: white;
     transform: scale(1)translateY(-5px);
     background-color: #0066FF;
 }
 /*Profile Picture and Social Icons*/
 
-
-/*Profile Button */
-.btn-container{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-}
-
-.btn-1, .btn-2, .btn-3{
-    padding: 0.5rem 1.5rem;
-    border-radius: 4rem;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s ease;
-    font-weight: 600;
-}
-
+/*Profile Download Btn*/
 .btn-1{
     background: transparent;
     border: 2px solid #0066FF;
-}
-
-.btn-2{
-    background: #0066FF;
-    border: 2px solid #fff;
 }
 
 .btn-1:hover{
@@ -330,48 +318,51 @@ a{
     background-color: #0066FF;
 }
 
+.btn-2{
+    background: #0066FF;
+    border: 2px solid #fff;
+}
+
 .btn-2:hover{
     color: #002233;
     transform: scale(1.1);
     background-color: #fff;
 }
-/*Profile Button */
+/*Profile Download Btn*/
 
 /*About Section*/
-.text-container{
-    margin-top: 2rem;
-    text-align: justify;
-    text-align-last: center;
-    margin-left: 3vw;
-    margin-right: 3vw;
-}
-
 .about-container{
-    display: inline-flex;
-    gap: 5rem;
-    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1800px;
+    margin: 2rem auto 0;
+    padding: 0 50px 0;
 }
 
-.about-details-container{
+.details-container{
     padding: 1.5rem;
-    color:#002233;
-    background: white;
+    flex: 1;
+    background: #fff;
     border-radius: 2rem;
+    text-align: center;
+    color:#002233;
     border: #0066FF 0.3rem solid;
     box-shadow: 10px 10px 0 #0066FF;
-    width: 450px;
 }
 
-.about-details-header{
+.about-header{
     font-weight: 600;
     font-size: 25px;
 }
 
-.about-details-text{
+.about-text{
     text-align: left;
 }
 
 .btn-3{
+    width: 15rem;
     background: #0066FF;
     border: 2px solid #0066FF;
 }
@@ -386,10 +377,12 @@ a{
 
 /*Skill Section*/
 .skill-container{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 2rem;
-    gap: 8rem;
+    gap: 3rem;
+    padding: 0 50px 0;
 }
 
 .skill-img .gifimg{
@@ -412,7 +405,7 @@ a{
 }
 
 .skill-detail-container{
-    width: 1000px;
+    width: 1300px;
     background-color: #fff;
     box-shadow: 10px 10px 0 #0066FF;
     border: #0066FF 0.3rem solid;
@@ -422,8 +415,8 @@ a{
 
 .skill-details i{
     position: relative;
-    font-size: 25px;
-    top: 3px;
+    font-size: 30px;
+    top: 5px;
 }
 
 .skill-details{
@@ -433,50 +426,61 @@ a{
     flex-direction: row;
     gap: 5rem;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 50px;
+    padding: 0 20px 0;
 }
 /*Skill Section*/
 
 /*Project Section*/
 .project-container{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
-    margin-top: 2rem;
-    gap: 5rem;
+    flex-direction: row;
 }
 
 .project-detail-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 1800px;
+    margin: 2rem auto 0;
+    padding: 0 50px 0;
+}
+
+.project-details{
+    padding: 1.5rem;
+    flex: 1;
+    background: #fff;
+    border-radius: 2rem;
+    text-align: center;
     color:#002233;
-    background-color: #fff;
-    box-shadow: 10px 10px 0 #0066FF;
     border: #0066FF 0.3rem solid;
-    border-radius: 10%;
-    width: 450px;
-    height: 550px;
+    box-shadow: 10px 10px 0 #0066FF;
 }
 
-.project-detail-container img{
-    width: 370px;
-    height: 300px;
-    border-radius: 10%;
-    margin-top: 1.5rem;
+.project-img-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
 }
 
-.project-detail-text{
-    margin-top: 2rem;
+.project-img-container img{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
 }
 
-.project-detail-text h3{
+.project-title{
     font-weight: 600;
+    font-size: 1.75rem;
+    margin: 2rem 0 1rem;
 }
 
-.btn-4, .btn-5{
-    border-radius: 4rem; 
-    color: #fff;
-    flex: 0 0 150px;
-    height: 50px;
-    margin-top: 2rem;
-    transition: 0.3s ease;
+.project-details p{
+    margin: 2rem 0 2rem;
 }
 
 .btn-4{
@@ -501,7 +505,9 @@ a{
 .contact-container{
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 2rem;
     gap: 3rem;
 }
@@ -540,10 +546,32 @@ a{
 }
 /*Contact Section*/
 
-footer{
-    background-color: #0066FF;
+/*Arrow Btn*/
+#arrowbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    border: #0066FF 0.2rem solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 01s ease;
 }
   
-footer p{
-    text-align: center;
+#arrowbtn:hover{
+    transform: scale(1.05)translateY(-15px);
+    box-shadow: 0px 7px 0 #0066FF;
 }
+/*Arrow Btn*/
+
+/*Footer*/
+footer {
+   text-align: center;
+   padding-bottom: 1px;
+   background-color: #0066FF;
+}
+/*Footer*/

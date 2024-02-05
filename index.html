@@ -19,10 +19,7 @@
             <a href="#project">Project</a>
             <a href="#contact">Contact</a>
         </div>
-        <button class="nav-btn" onclick="toseeksite()">Seek Profile</button>
-        <!--
         <button class="nav-btn" onclick="window.open('assets/resume.pdf')">Download CV</button>
-        -->
         <div class="nav-toggle">
             <i class='bx bxs-category-alt'></i>
         </div>
@@ -33,52 +30,45 @@
         <li><a href="#skill">Skill</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><button class="nav-btn" onclick="toseeksite()">Seek Profile</button></li>
-        <!--
         <li><button class="nav-btn" onclick="window.open('assets/resume.pdf')">Download CV</button></li>
-        -->
     </div>
-    <!--End of Navbar-->
+    <!--Navbar-->
 
+
+    <!--Profile Section-->
     <div class="spacer wave">
-        <section class="profile">
-            <div class="profile-img">
-                 <img src ="assets/images/profileimg.jpg" alt="Profile Picture">
+        <section id="profile">
+            <div class="profile-img-container">
+                <img src ="assets/images/profileimg.jpg" alt="Profile Picture">
             </div>
             <div class="profile-items">
-                <h3 class="profile-text1">Hi there, I'm</h3>
-                <h1 class="profile-text2">Harry Nguyen</h1>
-                <h3 class="profile-text3">I'm a<span> Frontend Developer</span></h3>
+                <p class="profile-text-p1">Hi There, I'm</p>
+                <h1 class="profile-name">Harry Nguyen</h1>
+                <p class="profile-text-p2">I'm a <span>Front-End Developer</span></p>
                 <div class="btn-container">
-                    <button class="btn-1" onclick="toseeksite()">Seek Profile</button>
-                    <!--
-                    <button class="btn-1" onclick="window.open('assets/resume.pdf')">Download CV</button>
-                    -->
-                    <button class="btn-2" onclick="location.href='#contact'">Contact Me</button>
+                    <button class="btn btn-1" onclick="window.open('assets/resume.pdf')">Download CV</button>
+                    <button class="btn btn-2" onclick="location.href='#contact'">Contact Me</button>
                 </div>
-                <div class="social-icons">
+                <div class="profile-icons-container">
                     <a href="https://www.linkedin.com/in/harry-nguyen-a0222128b/"><i class='bx bxl-linkedin' style='color:#ffffff'></i></a>
                     <a href="https://github.com/harry201vn99"><i class='bx bxl-github' style='color:#ffffff'></i></a>
                 </div>
             </div>
         </section>
     </div>
+    <!--Profile Section-->
 
-    <section class="section-container">
-        <h1 class="text-h1">About Me</h1>
-        <!--
-        <div class="text-container">
-            <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications. Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
-            <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
-        </div>
-        -->
+
+    <!--About Section-->
+    <section id="about">
+        <h1 class="section-title">About</h1>
         <div class="about-container">
-            <div class="about-details-container hover-effect">
-                <div class="about-details-header">
+            <div class="details-container hover-effect">
+                <div class="about-header">
                     <i class='bx bxs-cool' style='color:#002233'></i>
                     <p>Biography</p>
                 </div>
-                <div class="about-details-text">
+                <div class="about-text">
                     <p>Name: Xuan Dong (Harry) Nguyen.</p>
                     <p>Pronouns: He / Him.</p>
                     <p>Location: Melbourne, Victoria.</p>
@@ -87,37 +77,40 @@
                     <p>Driver License - Flexible, On-site / Remote.</p>
                 </div>
             </div>
-            <div class="about-details-container hover-effect">
-                <div class="about-details-header">
+            <div class="details-container hover-effect">
+                <div class="about-header">
                     <i class='bx bxs-badge-check' style='color:#002233'></i>
                     <p>Introduction</p>
                 </div>
-                <div class="centered-text">
+                <div>
                     <p>An enthusiastic IT graduate student in pursuit of a Frontend Development position, with a passion for creating visually engaging and user-centric web applications.</p>
                     <p>Committed to utilizing the latest technologies to design and implement responsive, intuitive, and scalable interfaces.</p>
                     <p>Dedicated to staying abreast of evolving trends and industry best practices in web development to facilitate the creation of innovative and leading-edge products.</p>
                 </div>
             </div>
-            <div class="about-details-container hover-effect">
-                <div class="about-details-header">
+            <div class="details-container hover-effect">
+                <div class="about-header">
                     <i class='bx bxs-certification' style='color:#002233'></i>
                     <p>Educations</p>
                 </div>
-                <div class="about-details-text">
+                <div>
                     <p>Swinburne University of Technology</p>
-                    <p class="centered-text"><i><small>2019 - 2021</small></i></p>
-                    <p class="centered-text"><i><small>B.ICT Bachelor Degree</small></i></p>
+                    <p><i><small>2019 - 2021</small></i></p>
+                    <p><i><small>B.ICT Bachelor Degree</small></i></p>
                     <p>Victorian Institute of Technology</p>
-                    <p class="centered-text"><i><small>2021 - 2023</small></i></p>
-                    <p class="centered-text"><i><small>AD.IT Advanced Diploma Degree</small></i></p>
+                    <p><i><small>2021 - 2023</small></i></p>
+                    <p><i><small>AD.IT Advanced Diploma Degree</small></i></p>
                 </div>
-                <button class="btn-3" onclick="window.open('assets/certificates.pdf')">Download Certificates</button>
+                <button class="btn btn-3" onclick="window.open('assets/certificates.pdf')">Download Certificates</button>
             </div>
         </div>
     </section>
-    
-    <section class="section-container">
-        <h1 class="text-h1">Skills</h1>
+    <!--About Section-->
+
+
+    <!--Skill Section-->
+    <section id="skill">
+        <h1 class="section-title">Skills</h1>
         <div class="skill-container">
             <div class="skill-img">
                 <iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" frameBorder="0" class="gifimg"></iframe>
@@ -127,110 +120,120 @@
                 <h2>Front-End Development</h2>
                 <div class="skill-details">
                     <div>
-                        <h5><i class='bx bxl-html5'></i> HTML</h5>
+                        <h4><i class='bx bxl-html5'></i> HTML</h4>
                         <p>Experienced</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-css3'></i> CSS</h5>
+                        <h4><i class='bx bxl-css3'></i> CSS</h4>
                         <p>Experienced</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-javascript'></i> Javascript</h5>
+                        <h4><i class='bx bxl-javascript'></i> Javascript</h4>
                         <p>Intermediate</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-git'></i> Git</h5>
+                        <h4><i class='bx bxl-git'></i> Git</h4>
                         <p>Basic</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-postgresql'></i> PostgreSQL</h5>
+                        <h4><i class='bx bxl-postgresql'></i> PostgreSQL</h4>
                         <p>Basic</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-react'></i> React.js</h5>
+                        <h4><i class='bx bxl-react'></i> React.js</h4>
                         <p>Basic</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxl-nodejs'></i> Node.js</h5>
+                        <h4><i class='bx bxl-nodejs'></i> Node.js</h4>
                         <p>Basic</p>
                     </div>
                     <div>
-                        <h5><i class='bx bxs-check-circle'></i> Express.js</h5>
+                        <h4><i class='bx bxs-check-circle'></i> Express.js</h4>
                         <p>Basic</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="section-container">
-        <h1 class="text-h1">Projects</h1>
+    <!--Skill Section-->
+    
+    
+    <!--Project Section-->
+    <section id="project">
+        <h1 class="section-title">Projects</h1>
         <div class="project-container">
-            <div class="project-detail-container hover-effect">
-                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
-                <div class="project-detail-text">
-                    <h3>Coming Soon...</h3>
+            <div class="project-detail-container">
+                <div class="project-details hover-effect">
+                    <div class="project-img-container">
+                        <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                    </div>
+                    <h2 class="project-title">Project One</h2>
                     <p>Project Description</p>
                     <div class="btn-container">
-                        <button class="btn-4">Github</button>
-                        <button class="btn-5">Showcase</button>
+                        <button class="btn btn-4">Github</button>
+                        <button class="btn btn-5">Showcase</button>
                     </div>
                 </div>
-            </div>
-            <div class="project-detail-container hover-effect">
-                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
-                <div class="project-detail-text">
-                    <h3>Coming Soon...</h3>
+                <div class="project-details hover-effect">
+                    <div class="project-img-container">
+                        <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                    </div>
+                    <h2 class="project-title">Project Two</h2>
                     <p>Project Description</p>
                     <div class="btn-container">
-                        <button class="btn-4">Github</button>
-                        <button class="btn-5">Showcase</button>
+                        <button class="btn btn-4">Github</button>
+                        <button class="btn btn-5">Showcase</button>
                     </div>
                 </div>
-            </div>
-            <div class="project-detail-container hover-effect">
-                <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
-                <div class="project-detail-text">
-                    <h3>Coming Soon...</h3>
+                <div class="project-details hover-effect">
+                    <div class="project-img-container">
+                        <img src ="assets/images/comingsoon.jpg" alt="Project Picture">
+                    </div>
+                    <h2 class="project-title">Project Three</h2>
                     <p>Project Description</p>
                     <div class="btn-container">
-                        <button class="btn-4">Github</button>
-                        <button class="btn-5">Showcase</button>
+                        <button class="btn btn-4">Github</button>
+                        <button class="btn btn-5">Showcase</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
- 
-    <div class="spacer layered">
-        <section class="section-container">
-            <h1 class="text-h1">Contact</h1>
-            <div class="contact-container">
-                <div class="contact-mail">
-                    <a href="mailto:harrynguyen12099vn@outlook.com"><i class='bx bxs-envelope'></i>Email: Harrynguyen12099vn@outlook.com</a>
-                </div>
-                <div class="contact-linkedin">
-                    <a href="https://www.linkedin.com/in/harry-nguyen-a0222128b/"><i class='bx bxl-linkedin-square'></i>LinkedIn</a>
-                </div>
+    <!--Project Section-->
+
+
+    <!--Contact Section-->
+    <section id="contact">
+        <h1 class="section-title">Contact</h1>
+        <div class="contact-container">
+            <div class="contact-mail">
+                <a href="mailto:harrynguyen12099vn@outlook.com"><i class='bx bxs-envelope'></i>Email<span>: Harrynguyen12099vn@outlook.com</span></a>
             </div>
-        </section>
+            <div class="contact-linkedin">
+                <a href="https://www.linkedin.com/in/harry-nguyen-a0222128b/"><i class='bx bxl-linkedin-square'></i>LinkedIn</a>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section-->
+
+
+    <!--Arrow Scroll-->
+    <div class="spacer2 layer">
+        <button id="arrowbtn"><i class='bx bxs-chevron-up' style='color:#0066FF'></i></button>
     </div>
+    <!--Arrow Scroll-->
+    
 
-    <button id="arrowbtn"><i class='bx bxs-chevron-up' style='color:#0066FF'></i></button>
-
+    <!--Footer-->
     <footer>
-        <p><i class='bx bx-copyright'></i>Xuan Dong Nguyen. All rights reserved</p>
+        <p>Copyright <i class='bx bx-copyright'></i> 2024 Xuan Dong Nguyen. All Rights Reserved.</p>
     </footer>
+    <!--Footer-->
+
 
     <!--Script-->
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <script>
-    function toseeksite(){
-        window.location.href = 'https://www.seek.com.au/profile/harry-nguyen-0grHlyKTlg';
-    }
-    </script>
     <!--Script-->
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 I am passionate about Web front-end development, and my portfolio reflects the dedication and enthusiasm I bring to every project. With a blend of technical skills and artistic flair, I aim to deliver unique and impactful experiences.
 
-![image](https://github.com/harry201vn99/Website-Portfolio/assets/156168109/7c144553-7082-485e-bf5f-51a9c266ba74)
+![image](https://github.com/harry201vn99/Website-Portfolio/assets/156168109/36bfe6b6-9371-47dd-a664-1d95b8f13aa4)
 
 **Technologies Used:**
 

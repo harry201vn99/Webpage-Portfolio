@@ -1,16 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const navtoggle = document.querySelector('.nav-toggle')
-  const navtoggleicon = document.querySelector('.nav-toggle i')
-  const navdropdownmenu = document.querySelector('.nav-dropdown-menu')
-  
-  navtoggle.onclick = function(){
-    navdropdownmenu.classList.toggle('open')
-    const isOpen = navdropdownmenu.classList.contains('open')
-    navtoggleicon.classList = isOpen
-    ?'bx bxs-x-circle'
-    :'bx bxs-category-alt'
-  }
-  
+const navtoggle = document.querySelector('.nav-toggle')
+const navtoggleicon = document.querySelector('.nav-toggle i')
+const navdropdownmenu = document.querySelector('.nav-dropdown-menu')
+
+navtoggle.onclick = function(){
+  navdropdownmenu.classList.toggle('open')
+  const isOpen = navdropdownmenu.classList.contains('open')
+  navtoggleicon.classList = isOpen
+  ?'bx bxs-x-circle'
+  :'bx bxs-category-alt'
+}
+
+document.addEventListener("DOMContentLoaded", function() {  
   var scrollToTopBtn = document.getElementById("arrowbtn");
   
   // Show or hide the button based on scroll position
